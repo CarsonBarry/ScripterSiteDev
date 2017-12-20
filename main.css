@@ -27,7 +27,10 @@ body {
 		margin-left: 10px;
 		margin-right: 10px;
 		margin-bottom: 10px;
+				/**** TEMPORARY OUTLINES MOFOS!!! ****/
+				outline: 1px dotted red;
 	}
+	
 
 	header div.logoType {
 		font-size: 30px;
@@ -35,6 +38,11 @@ body {
 		color: white;
 		background-color: black;
 	}
+
+			/**** TEMPORARY OUTLINES MOFOS!!! ****/
+			header div.logoType {
+				outline: 1px dotted green;
+			}
 
 	
 
@@ -46,6 +54,16 @@ body {
 		 	list-style-type: none;
 		}
 
+				/**** TEMPORARY OUTLINES MOFOS!!! ****/
+				header nav {
+					outline: 1px dotted cyan;
+				}
+				header nav ul > * {
+					outline: 1px dashed green;
+				}
+				header nav ul a {
+					outline: 1px solid red;
+				}
 
 		header nav ul {
 			max-width: 580px;
@@ -85,6 +103,14 @@ body {
 		    padding: 0;
 		}
 
+				/**** TEMPORARY OUTLINES MOFOS!!! ****/
+				div.fileMenu {
+					outline: 1px dotted white;
+				}
+				div.fileMenu ul li {
+					outline: 1px dashed yellow;
+				}
+
 		div.fileMenu ul {
 		    list-style-type: none;
 		    margin: 0;
@@ -115,12 +141,20 @@ body {
 		    background-color: #333;
 		}
 
-	div.fileName{
+	div.fileName {
 		float: right;
 		margin: 5px;
 	}
 
-	div.fileName form{
+			/**** TEMPORARY OUTLINES MOFOS!!! ****/
+			div.fileName {
+				outline: 1px dotted yellow;
+			}
+			div.fileName > * {
+				outline: 1px dashed red;
+			}
+
+	div.fileName form {
 		display: inline;
 	}
 
@@ -129,6 +163,8 @@ header hr {
 	clear: both;
 	top: 60px;
 	margin: 0;
+			/**** TEMPORARY OUTLINES MOFOS!!! ****/
+			outline: 2px dotted purple;
 }
 
 article {
@@ -136,4 +172,6 @@ article {
 	background-color: black;
 	width: 100%;
 	height: 100px;
+			/**** TEMPORARY OUTLINES MOFOS!!! ****/
+			outline: 1px dotted orange;
 }
