@@ -188,8 +188,27 @@
 			background-color: #333;
 			margin-right: .5em;
 			border-radius: .625em;
+			color: white;
+			text-align: center;
+			display: table;
 		/*	outline: 1px dotted white;	*/
 		}
+
+		div.buttonCenter {
+			margin-top: 3.5em;
+		}
+
+		div #newObject{
+			font-size: 2em;
+			margin-top: -.5em;
+		}
+
+		div.plus{
+			font-size: 6em;
+			font-weight: 100;
+		}
+
+
 
 		div.object:hover{
 			border: 1px solid #888;
