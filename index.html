@@ -13,7 +13,7 @@
 	<!--
 	Need to link CSS and Javascript files.
 	-->
-	<link rel="stylesheet" type="text/css" href="main1.css">
+	<link rel="stylesheet" type="text/css" href="main2.css">
 	<script type=text/javascript src="objectDefinitions.js"></script>
 	<script type=text/javascript src="eventHandlers.js"></script>
 
@@ -50,16 +50,17 @@
 				<li>Import</li>
 			</ul>
 		</div>
-	</div>
+	
 
 		<div class="fileName">
-			File Name:
+			<div class="label">Project Name:</div>
 			<form>
-				<input type="text" name="fileName">
+				<input type="text" name="fileName" size="31">
 			</form>
 		</div>
 
 		<hr>
+	</div> 
 
 	</header>
 
@@ -67,7 +68,7 @@
 
 	<article class="workSpace"> <!-- This is where objects and scripts are displayed and edited -->
 		
-		<div class="newObjectButton">
+		<div class="object">
 			<!-- need to create listener to generate new object and insert html from "forgeObject" class -->
 			<img src="newObject.png"> <!--listener is an on-click of this button -->
 		</div>

@@ -13,7 +13,6 @@ html {
 
 body {
 	
-
 	background-color: black;
 }
 
@@ -58,7 +57,6 @@ body {
 
 		/*Site Navigation*/
 			header nav {
-
 				float: right;
 				margin-top: 20px;
 				margin-bottom: auto;
@@ -108,25 +106,20 @@ body {
 	/*Lower Header Structural Div*/
 		
 		div.lowerHeader{
-			height: 25px;
+			height: 50px;
+			
+			/*Debug Outline*/ /*
+			outline: 1px dashed yellow;*/
 		}
 
 		/*File Menu*/
 			div.fileMenu {
 				float: left;
 			 	list-style-type: none;
-			    margin-top: 10px;
+			    margin-top: 0;
 				margin-bottom: auto;
 			    padding: 0;
 			}
-
-					/**** TEMPORARY OUTLINES MOFOS!!! ****/
-					/*div.fileMenu {
-						outline: 1px dotted white;
-					}
-					div.fileMenu ul li {
-						outline: 1px dashed yellow;
-					}*/
 
 			div.fileMenu ul {
 			    list-style-type: none;
@@ -152,36 +145,60 @@ body {
 			    color: white;
 			    font-size: 25px;
 			    text-align: center;
-			    padding: 5px 10px 5px 10px;
+			    padding: 10px 10px 5px 10px;
 			    margin-right: 20px;
 			    text-decoration: none;
 			}
 
-			/* Change the link color on hover */
 			div.fileMenu ul li:hover {
 			    background-color: #333;
 			}
 
 		div.fileName {
-			margin-top: 10px;
+			padding: 0px 10px 5px 0px;
+			margin-top: 0px;
 				margin-bottom: auto;
-			height: 25px;
+			height: 30px;
 			font-size: 25px;
 			float: right;
-			
+			/*Debug Outline*/ 
+		/*	outline: 1px dotted white;*/
 		}
 
-				/**** TEMPORARY OUTLINES MOFOS!!! ****/
+		div.label{
+			height: 35px;
+			font-size: 25px;
+			line-height: 35px;
+			float: left;
+			display: inline;
+			margin-top: 0px;
+			margin-bottom: auto;
+			margin-right: 20px;
+		/*	outline: 1px dotted white;*/
+		}
+
+		div.fileName form{
+		display: inline-block;
+		}
+
+		div.fileName form input{
+
+			height: 100%; 
+			padding: 5px 5px 5px 5px;
+			background-color: white;
+			font-size: 19px;
+			font-family: courier;
+			border: none;
+		}
+
+				/**** TEMPORARY OUTLINES MOFOS!!! ****/ /*
 				div.fileName {
 					outline: 1px dotted yellow;
 				}
 				div.fileName > * {
-					outline: 1px dashed red;
-				}
+					outline: 1px dashed red;  
+				}   */
 
-		div.fileName form {
-			display: inline;
-		}
 
 header hr {
 

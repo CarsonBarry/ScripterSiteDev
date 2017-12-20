@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/*	
+		Halo 5: Forge Scipting Web Tool v 0.0.1
+		Authors: Carson Barry, Stephen Collier
+*/
+
+/*Html-Scope Styles*/
+	html {
+		font-family: Courier, sans-serif;
+		background-color: black;
+	}
+
+/* Structural Styles */
+
+	/*Header*/
+
+		header {
+			max-width: 100%;
+			background-color: black;
+			color: white;
+			margin:20px;
+		}
+
+		/*Upper Header*/
+
+			header div.upperHeader{
+				text-align: center;
+				height: 2.5em;
+			/*	outline: 1px dotted white;*/
+			}
+
+			/*Logotype & Logo*/
+
+				header div.logoType {
+					float: left;
+					display: inline;
+					font-size: 2em;
+					/*outline: 1px dotted white;*/
+				}
+
+				header img {
+					height: 2.5em;
+					position: absolute;
+					left: 0;
+					right: 0;
+					margin: auto;
+					/*outline: 1px dotted white;*/			
+				}
+
+			/*Site Navigation*/
+
+				header nav {
+					float: right;
+					height: 1.5em;
+					margin-top: 0em;
+					margin-bottom: auto;
+					list-style-type: none;
+					padding: .35em 0 .65em 0;
+				/*	outline: 1px dotted white;*/
+				}
+
+				header nav ul {
+				    list-style-type: none;
+				    margin: 0;
+				    padding: 0;
+				    overflow: hidden;
+				    background-color: black;
+				}
+
+				header nav ul li {
+					
+				    float: left;
+				}
+
+				header nav ul li a {
+					min-width: 25%;
+					font-size: 1em;
+				    display: block;
+				    color: white;
+				    text-align: center;
+				    padding: .25em .5em;
+				    margin-left: 1.5em;
+				    text-decoration: none;
+				}
+
+				header nav ul li a:hover {
+				    background-color: #333;
+				}
+
+		/*Lower Header*/
+
+			/*File Menu*/
+
+				div.fileMenu {
+					float: left;
+				 	list-style-type: none;
+				    margin-top: 0;
+					margin-bottom: auto;
+				    padding: 0;
+				}
+
+				div.fileMenu ul {
+				    list-style-type: none;
+				    margin: 0;
+				    padding: 0;
+				    overflow: hidden;
+				    background-color: black;
+				}
+
+				div.fileMenu ul li {
+				    float: left;
+				    display: block;
+				    color: white;
+				    font-size: 1em;
+				    text-align: center;
+				    padding: .25em .5em;
+				    margin-right: 1.5em;
+				    text-decoration: none;
+				}
+
+
+				div.fileMenu ul li:hover {
+				    background-color: #333;
+				}
+
+			/*Project Name Field*/
+
+				div.fileName {
+					padding:;
+					margin-top: 0;
+					margin-bottom: auto;
+					height: 1em;
+					font-size: 1em;
+					float: right;
+				/*	outline: 1px dotted white;*/
+				}
+
+				div.label{
+					height: 1em;
+					font-size: 1em;
+					line-height: 1em;
+					float: left;
+					display: inline;
+					margin-top: .3em;
+					margin-bottom: auto;
+					margin-right: .5em;
+				/*	outline: 1px dotted white;*/
+				}
+
+				div.fileName form{
+					display: inline-block;
+				/*	outline: 1px dotted white;*/
+				}
+
+				div.fileName form input{
+					
+					width: 26em;
+					height: 100%; 
+					padding: .1em .2em .1em .4em;
+					margin-top: .3em;
+					margin-right: .5em;
+					background-color: white;
+					font-size: .8em;
+					font-family: courier;
+					border: none;
+				/*	outline: 1px dotted white;*/
+				}
+
+			header hr {
+				clear: both;
+				top: 60px;
+				margin: 0;
+			}
+
+	/*Workspace*/
+
+		article{
+			height: 100%;
+			margin: 1.25em;
+		/*	background-color: #333;		*/
+		/*	outline: 1px dotted white;	*/
+		}
+
+		div.object{
+			height: 17.5em;
+			width: 33%;
+			background-color: #333;
+			margin-right: .5em;
+			border-radius: .625em;
+		/*	outline: 1px dotted white;	*/
+		}
+
+		div.object:hover{
+			border: 1px solid #888;
+		}
+
+		div.object:active{
+			background-color: #444;
+		}
