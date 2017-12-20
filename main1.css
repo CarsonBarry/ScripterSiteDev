@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+/*	
+		Halo 5: Forge Scipting Web Tool v 0.0.1
+		Authors: Carson Barry
+*/
+
+html {
+	font-family: Courier, sans-serif;
+}
+
+/* Structural Styles */
+
+body {
+	
+
+	background-color: black;
+}
+
+
+/*Header*/
+	header {
+		max-width: 100%;
+		background-color: black;
+		color: white;
+		margin:20px;
+				/**** TEMPORARY OUTLINES MOFOS!!! ****
+				outline: 1px dotted red;*/
+	}
+	
+	/*Upper Header Structural Div*/
+		header div.upperHeader{
+			text-align: center;
+			height: 80px;
+			/*outline: 1px dotted white;*/
+		}
+
+		header div.logoType {
+			float: left;
+			max-width: 30%;
+			display: inline;
+			font-size: 64px;
+		}
+
+				/**** TEMPORARY OUTLINES MOFOS!!! ****
+				header div.logoType {
+					outline: 1px dotted green;
+				}*/
+
+		header img {
+			height: 80px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto
+		}
+		
+
+		/*Site Navigation*/
+			header nav {
+
+				float: right;
+				margin-top: 20px;
+				margin-bottom: auto;
+				list-style-type: none;
+			}
+
+					/**** TEMPORARY OUTLINES MOFOS!!! ****
+					header nav {
+						outline: 1px dotted cyan;
+					}
+					header nav ul > * {
+						outline: 1px dashed green;
+					}
+					header nav ul a {
+						outline: 1px solid red;
+					}*/
+
+			header nav ul {
+				
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    overflow: hidden;
+			    background-color: black;
+			}
+
+			header nav ul li {
+			    float: left;
+			}
+
+			header nav ul li a {
+				min-width: 25%;
+				font-size: 25px;
+			    display: block;
+			    color: white;
+			    text-align: center;
+			    padding: 5px 10px;
+			    margin-left: 20px;
+			    text-decoration: none;
+			}
+
+			/* Change the link color on hover */
+			header nav ul li a:hover {
+			    background-color: #333;
+			}
+
+	/*Lower Header Structural Div*/
+		
+		div.lowerHeader{
+			height: 25px;
+		}
+
+		/*File Menu*/
+			div.fileMenu {
+				float: left;
+			 	list-style-type: none;
+			    margin-top: 10px;
+				margin-bottom: auto;
+			    padding: 0;
+			}
+
+					/**** TEMPORARY OUTLINES MOFOS!!! ****/
+					/*div.fileMenu {
+						outline: 1px dotted white;
+					}
+					div.fileMenu ul li {
+						outline: 1px dashed yellow;
+					}*/
+
+			div.fileMenu ul {
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    overflow: hidden;
+			    background-color: black;
+			}
+
+			div.fileMenu ul li {
+			    float: left;
+			      display: block;
+			    color: white;
+			    font-size: 25px;
+			    text-align: center;
+			    padding: 5px 5px;
+			    margin-right: 20px;
+			    text-decoration: none;
+			}
+
+			div.fileMenu ul li a {
+			    display: block;
+			    color: white;
+			    font-size: 25px;
+			    text-align: center;
+			    padding: 5px 10px 5px 10px;
+			    margin-right: 20px;
+			    text-decoration: none;
+			}
+
+			/* Change the link color on hover */
+			div.fileMenu ul li:hover {
+			    background-color: #333;
+			}
+
+		div.fileName {
+			margin-top: 10px;
+				margin-bottom: auto;
+			height: 25px;
+			font-size: 25px;
+			float: right;
+			
+		}
+
+				/**** TEMPORARY OUTLINES MOFOS!!! ****/
+				div.fileName {
+					outline: 1px dotted yellow;
+				}
+				div.fileName > * {
+					outline: 1px dashed red;
+				}
+
+		div.fileName form {
+			display: inline;
+		}
+
+header hr {
+
+	clear: both;
+	top: 60px;
+	margin: 0;
+			/**** TEMPORARY OUTLINES MOFOS!!! ****
+			outline: 2px dotted purple;/*/
+}
+
+article {
+	padding-top: 10px;
+	background-color: black;
+	width: 100%;
+	height: 100px;
+			/**** TEMPORARY OUTLINES MOFOS!!! ****
+			outline: 1px dotted orange;/*
+}

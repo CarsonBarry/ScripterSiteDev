@@ -13,7 +13,7 @@
 	<!--
 	Need to link CSS and Javascript files.
 	-->
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="main1.css">
 	<script type=text/javascript src="objectDefinitions.js"></script>
 	<script type=text/javascript src="eventHandlers.js"></script>
 
@@ -21,10 +21,13 @@
 <body>
 
 	<header> <!-- Main page header - Static -->
+	
+	<div class="upperHeader">
+		<div class="logoType">
+			&lt;Scripter&gt; <!-- Logotype, upper left -->
+		</div>
 
-	<div class="logoType">
-		&lt;Scripter&gt; <!-- Logotype, upper left -->
-	</div>
+		<img src="guildLogo.png">
 
 		<nav> <!-- Site navigation, upper right -->
 			<ul> <!-- These need to be links -->
@@ -34,17 +37,20 @@
 				<li><a href="url">Contact</a></li>
 			</ul>
 		</nav>
+	</div>
 
+
+
+	<div class="lowerHeader">
 		<div class="fileMenu"> <!-- Save, Load, & Import Menu - Upper Left Under Logotype -->
-
 			<ul> <!-- These need to be buttons/menus -->
 				<li>Load</li>
 				<li>Save</li>
 				<li>Export</li>
 				<li>Import</li>
 			</ul>
-	
 		</div>
+	</div>
 
 		<div class="fileName">
 			File Name:
