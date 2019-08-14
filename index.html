@@ -8,75 +8,196 @@
 <html>
 <head>
 
-	<title>Scripter</title> <!--Need to think of a better name-->
+	<title>Halo Scripter</title> <!--Need to think of a better name-->
 
-	<!--
-	Need to link CSS and Javascript files.
-	-->
-	<link rel="stylesheet" type="text/css" href="main2.css">
-	<script type=text/javascript src="objectDefinitions.js"></script>
-	<script type=text/javascript src="eventHandlers.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+
+		/* This isn't working for some reason */
+		.workspace{
+			background-image: url("img/bg.png");
+		}
+
+		.headerlogo{
+			width: 30px;
+			height: 30px;
+		}
+
+		.card{
+			margin-top: 10px;
+			margin-left: 10px;
+			float: left;
+		}
+
+		.card-title{
+			color: #ffffff;
+		}
+
+		.btn-default{
+			background-color: inherit; 
+		}
+
+		.bottom{
+			margin-bottom: 0;
+			color: #ffffff;
+		}
+
+		.link-button{
+			color:#f4f4f4;
+			font-size: 12px;
+		}
+
+		.link-button:hover{
+			color:#000000;
+			font-size: 12px;
+			text-decoration: none;
+		}
+
+		.material-icons{
+			margin: 0;
+			padding: 0;
+		}
+
+
+
+	</style></strong>
 
 </head>
 <body>
 
-	<header> <!-- Main page header - Static -->
-	
-	<div class="upperHeader">
-		<div class="logoType">
-			&lt;Scripter&gt; <!-- Logotype, upper left -->
+<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">Halo 5 Scripter <img class="headerlogo" src="img/guildLogo.png"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarsExample03">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">How To</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Contact</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project Options</a>
+	        <div class="dropdown-menu" aria-labelledby="dropdown03">
+	          <a class="dropdown-item" href="#">Load Project</a>
+	          <a class="dropdown-item" href="#">Save Project</a>
+	          <a class="dropdown-item" href="#">Export Project</a>
+	          <a class="dropdown-item" href="#">Import Project</a>
+	        </div>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-md-0">
+	      <input class="form-control" type="text" placeholder="Project Name">
+	    </form>
+	  </div>
+	</nav>
+
+<!-- WORKSPACE -->
+	<div class="container-fluid workspace">
+		
+<!-- FIRST OBJECT -->
+		<div class="card bg-secondary" style="width: 18rem;">
+		  <div class="card-body">
+
+		    <div class="input-group mb-3">
+		      <div class="input-group-prepend">
+		        <span class="input-group-text" id="basic-addon1">Name</span>
+		      </div>
+		      <input type="text" class="form-control" placeholder="Object Name">
+		    </div>
+
+		    <div class="input-group mb-3">
+		      <div class="input-group-prepend">
+		        <span class="input-group-text" id="basic-addon1">Type</span>
+		      </div>
+		      <input type="text" class="form-control" placeholder=" Forge Object Type">
+		    </div>
+
+		    <div class="card-text text-center">
+		    	<button class="btn btn-light">
+		    		Add Script <br>
+		    		<i class="material-icons">code</i>
+		    	</button>
+		    </div>
+		  </div>
 		</div>
 
-		<img src="guildLogo.png">
+<!-- ADD OBJECT BUTTON -->
+		<div class="card bg-dark" style="width: 18rem;">
+		  <div class="card-body text-center">
+		    	<button class="btn btn-light">
+		    		Add Object <br>
+		    		<i class="material-icons">add</i>
+		    	</button>
+		    </div>
+		  </div>
+		</div>
 
-		<nav> <!-- Site navigation, upper right -->
-			<ul> <!-- These need to be links -->
-				<li><a href="index.html">Home</a></li>
-				<li><a href="howTo.html">How To</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
 	</div>
 
+<!-- FOOTER -->
+<footer class="footer mt-auto py-3 fixed-bottom bg-dark">
+  <div class="container-fluid">
 
-
-	<div class="lowerHeader">
-		<div class="fileMenu"> <!-- Save, Load, & Import Menu - Upper Left Under Logotype -->
-			<ul> <!-- These need to be buttons/menus -->
-				<li>Load</li>
-				<li>Save</li>
-				<li>Export</li>
-				<li>Import</li>
-			</ul>
+	<div class="row">
+		<div class="col-md-5">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
 		</div>
+		<div class="col-md-5">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+		</div>
+		<div class="col-md-2 text-right">
+					<a class="link-button align-top text-right" href="#">
+						More Resource Data 
+						<i class="material-icons align-top">
+							keyboard_arrow_up
+						</i>
+					</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-5">
+					<p class="bottom">0001/1600 Objects Used</p>
+		</div>
+		<div class="col-md-5">
+					<p class="bottom">000/512 Scripts Used</p>
+		</div>
+		<div class="col-md-2">
+					<p class="bottom">0000 Actions</p>
+		</div>
+	</div>
+
+   </div>
+</footer>
+
+<!-- jQuery Activation -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 	
-
-		<div class="fileName">
-			<div class="label">Project Name:</div>
-			<form>
-				<input type="text" name="fileName" size="31">
-			</form>
-		</div>
-
-		<hr>
-	</div> 
-
-	</header>
-
-
-
-	<article class="workSpace"> <!-- This is where objects and scripts are displayed and edited -->
-		
-		<div class="object">
-			<!-- need to create listener to generate new object and insert html from "forgeObject" class -->
-			<div class="buttonCenter">
-				<div class="plus">+</div> 
-				<div id="newObject">New Object</div>
-			</div>
-		</div>
-
-	</article>
-
 </body>
 </html>

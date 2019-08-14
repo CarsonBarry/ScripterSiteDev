@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!-- 	
+		Halo 5: Forge Scipting Web Tool v 0.0.1
+		Authors: Carson Barry
+-->
+
+<html>
+<head>
+
+	<title>Scripter</title> <!--Need to think of a better name-->
+
+	<!--
+	Need to link CSS and Javascript files.
+	-->
+	<link rel="stylesheet" type="text/css" href="main2.css">
+	<script type=text/javascript src="objectDefinitions.js"></script>
+	<script type=text/javascript src="eventHandlers.js"></script>
+
+</head>
+<body>
+
+	<header> <!-- Main page header - Static -->
+	
+	<div class="upperHeader">
+		<div class="logoType">
+			&lt;Scripter&gt; <!-- Logotype, upper left -->
+		</div>
+
+		<img src="guildLogo.png">
+
+		<nav> <!-- Site navigation, upper right -->
+			<ul> <!-- These need to be links -->
+				<li><a href="index.html">Home</a></li>
+				<li><a href="howTo.html">How To</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+
+
+
+	<div class="lowerHeader">
+		<div class="fileMenu"> <!-- Save, Load, & Import Menu - Upper Left Under Logotype -->
+			<ul> <!-- These need to be buttons/menus -->
+				<li>Load</li>
+				<li>Save</li>
+				<li>Export</li>
+				<li>Import</li>
+			</ul>
+		</div>
+	
+
+		<div class="fileName">
+			<div class="label">Project Name:</div>
+			<form>
+				<input type="text" name="fileName" size="31">
+			</form>
+		</div>
+
+		<hr>
+	</div> 
+
+	</header>
+
+
+
+	<article class="workSpace"> <!-- This is where objects and scripts are displayed and edited -->
+		
+		<div class="object">
+			<!-- need to create listener to generate new object and insert html from "forgeObject" class -->
+			<div class="buttonCenter">
+				<div class="plus">+</div> 
+				<div id="newObject">New Object</div>
+			</div>
+		</div>
+
+	</article>
+
+</body>
+</html>
