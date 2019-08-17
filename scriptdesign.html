@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<!-- 	
+		Halo 5: Forge Scipting Web Tool v 0.0.1
+		Authors: Carson Barry
+-->
+
+<html>
+<head>
+<!-- PAGE TITLE -->
+	<title>Halo Scripter | Workspace</title>
+<!-- BOOTSTRAP JQUERY CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+			crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+			crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+			crossorigin="anonymous"></script>
+<!-- BOOTSTRAP CSS CDN -->
+	<link 	rel="stylesheet" 
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+			crossorigin="anonymous">
+<!-- GOOGLE MATERIAL DESIGN ICONS -->
+	<link 	href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+			rel="stylesheet">
+<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" type="text/css" href="css/customstyles.css">
+</head>
+<body>
+
+<!-- WORKSPACE -->  <!-- NEED TO IMPLEMENT HORIZONTAL SCROLLING -->
+	<div class="container-fluid workspace">
+		
+	<!-- FIRST OBJECT -->
+		<div class="card bg-secondary forgeObject" id="1" style="width: 18rem;">
+		  <div class="card-body">
+	<!-- SCRIPTS HEADER & HIDE/SHOW BUTTON -->    
+		    <div class="row">
+			    <div class="col-md-8">
+				    <h4>SCRIPTS</h4> 
+				</div>
+				<div class="col-md-4">
+				    <button class="btn btn-dark btn-thin">Hide</button>
+			    </div>
+			</div>
+		    <hr class="underline">
+		    
+	<!-- SCRIPTS -->
+		<!-- SCRIPT TEMPLATE -->
+		<!-- SCRIPT 1 -->				
+				<div class="text-center forgeScript rounded">
+				<!-- CONDITION -->	
+					<div class="condition">
+						<div class="row">
+							<div class="col-md-4 text-left scriptNumber">
+							 SCRIPT 1
+							</div>
+							<div class="col-md-8">
+								<div class="btn-group btn-group-wide metadata-field-select">  
+								    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    Condition
+								    </button>
+								    <div class="dropdown-menu">
+									    <a class="dropdown-item" href="#">Conditions Here</a>
+								    </div>
+							    </div>
+						    </div>
+						</div>
+					</div>
+				<!-- ACTIONS -->
+					<div class="actions">
+						<div class="forgeAction action1 rounded"><div class="row">
+								<div class="col-md-4 text-left actionNumber">
+								ACTION 1
+								</div>
+								<div class="col-md-8">
+									<div class="btn-group btn-group-wide metadata-field-select">  
+									    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    Action
+									    </button>
+									    <div class="dropdown-menu">
+										    <a class="dropdown-item" href="#">Actions Here</a>
+									    </div>
+								    </div>
+							    </div>
+							</div>
+						</div>
+						<button class="btn btn-info btn-thin btn-wide">
+		    		Add Action <i class="material-icons">add</i>
+		    	</button>
+					</div>
+			</div>
+		<!-- ADD SCRIPT BUTTON -->
+		    <div class="card-text text-center">
+		    	<button class="btn btn-primary btn-thin btn-wide">
+		    		Add Script <i class="material-icons">code</i>
+		    	</button>
+		    </div>
+		  </div>			
+		</div>
+		  </div>			
+		</div>
+
+
+
+
+<!-- jQuery Activation -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+<!-- SCRIPTS -->  <!-- NEEDS TO BE MIRGRATED TO SEPARATE FILE AND LINKED -->
+	<script type="text/javascript">
+
+	// OBJECT & SCRIPT MANIPULATION FUNCTIONS
+		
+		// ADD SCRIPT FUNCTION
+
+		// DELETE SCRIPT FUNCTION
+
+		// ADD OBJECT FUNCTION
+
+		// DELETE OBJECT FUNCTION
+
+		// COPY SCRIPT FUNCTION
+
+		// CUT SCRIPT FUNCTION
+
+		// PASTE SCRIPT FUNCTION
+
+	// DISPLAY FUNCTIONS
+
+		// SHOW OBJECT METADATA FUNCTION
+
+		// HIDE OBJECT METADATA FUNCTION
+
+		// SHOW MORE RESOURCE DATA FUNCTION
+
+		// HIDE MORE RESOURCE DATA FUNCTION
+
+		// UPDATE OBJECTS USED DATA DISPLAY FUNCTION
+
+		// UPDATE SCRIPTS USED DATA DISPLAY FUNCTION
+
+	// PROJECT OPTIONS FUNCTIONS
+
+		// NEW PROJECT FUNCTION
+
+		// LOAD PROJECT FUNCTION
+
+		// SAVE PROJECT FUNCTION
+
+		// EXPORT PROJECT FUNCTION
+
+		// IMPORT PROJECT FUNCTION
+
+	</script>
+	
+</body>
+</html>

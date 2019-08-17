@@ -27,92 +27,8 @@
 <!-- GOOGLE MATERIAL DESIGN ICONS -->
 	<link 	href="https://fonts.googleapis.com/icon?family=Material+Icons" 
 			rel="stylesheet">
-<!-- CUSTOM STYLES -->  <!-- NEEDS TO BE MIGRATED TO SEPARATE FILE AND LINKED -->
-	<style type="text/css">
-		body{
-			background-color: black;
-		}
-
-		/* This isn't working for some reason */
-		.workspace{
-			background-image: url("img/bg.png");
-		}
-
-		.headerlogo{
-			width: 30px;
-			height: 30px;
-		}
-
-		.card{
-			margin-top: 10px;
-			margin-left: 10px;
-			float: left;
-		}
-
-		.card-title{
-			color: #ffffff;
-		}
-
-		.btn-group-wide, .btn-thin, .btn-wide{
-			width: 100%;
-		}
-
-		.btn{
-			padding: 0px;
-		}
-
-		.btn-default{
-			background-color: inherit; 
-		}
-
-		.bottom{
-			margin-bottom: 0;
-			color: #ffffff;
-		}
-
-		.link-button{
-			color:#f4f4f4;
-			font-size: 12px;
-		}
-
-		.link-button:hover{
-			color:#000000;
-			font-size: 12px;
-			text-decoration: none;
-		}
-
-		.material-icons{
-			margin: 0;
-			padding: 0;
-			vertical-align: middle;
-			font-size: 18px;
-			font-weight: bold;
-		}
-
-		.metadata-field-type, .metadata-field-select{
-			padding-bottom: 5px;
-		}
-
-		.forgeObject .card-body .row{
-			padding-bottom: 2px;
-		}
-
-		.metadata-field-type *{
-			height: 20px;
-			font-size: 12px;
-		}
-
-		.metadata-field-select button, .btn-thin{
-			height: 20px;
-			font-size: 12px;
-		}
-
-		hr.underline{
-			margin-top: -9px;
-			margin-bottom: 7px;
-			border-top: 2px solid black;
-		}
-	</style></strong>
+<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" type="text/css" href="css/customstyles.css">
 </head>
 <body>
 
@@ -388,9 +304,49 @@
 		    
 	<!-- SCRIPTS -->
 		<!-- SCRIPT TEMPLATE -->
-			<div class="card-text text-center forgeScript">
-				
-			</div>
+			<!-- SCRIPT 1 -->				
+					<div class="text-center forgeScript rounded">
+					<!-- CONDITION -->	
+						<div class="condition">
+							<div class="row">
+								<div class="col-md-4 text-left scriptNumber">
+								SCRIPT 1
+								</div>
+								<div class="col-md-8">
+									<div class="btn-group btn-group-wide metadata-field-select">  
+									    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    Condition
+									    </button>
+									    <div class="dropdown-menu">
+										    <a class="dropdown-item" href="#">Conditions Here</a>
+									    </div>
+								    </div>
+							    </div>
+							</div>
+						</div>
+					<!-- ACTIONS -->
+						<div class="actions">
+							<div class="forgeAction action1 rounded"><div class="row">
+									<div class="col-md-4 text-left actionNumber">
+									ACTION 1
+									</div>
+									<div class="col-md-8">
+										<div class="btn-group btn-group-wide metadata-field-select">  
+										    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    Action
+										    </button>
+										    <div class="dropdown-menu">
+											    <a class="dropdown-item" href="#">Actions Here</a>
+										    </div>
+									    </div>
+								    </div>
+								</div>
+							</div>
+							<button class="btn btn-info btn-thin btn-wide">
+			    		Add Action <i class="material-icons">add</i>
+			    	</button>
+						</div>
+				</div>
 		<!-- ADD SCRIPT BUTTON -->
 		    <div class="card-text text-center">
 		    	<button class="btn btn-primary btn-thin btn-wide">
